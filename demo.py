@@ -36,7 +36,7 @@ response = client.chat.completions.create(
                     "role": "system", "content": "你是一个产品经理，善于周报总结",
                 },
                 {
-                    "role": "user", "content": "请把下面这些明细整理成周报,".join(commit.asdict()['message'] for commit in commits)
+                    "role": "user", "content": "请把下面这些明细整理成周报," + ",".join(commit.asdict()['message'] for commit in commits)
                 }
             ],
         stream=False
