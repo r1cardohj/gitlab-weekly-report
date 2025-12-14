@@ -1,0 +1,10 @@
+[project]
+name = "gitlab-weekly-report"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=2.11.0",
+    "python-gitlab>=7.0.0",
+]
